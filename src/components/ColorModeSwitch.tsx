@@ -10,7 +10,7 @@ const ColorModeSwitch = () => {
         isChecked={colorMode === 'dark'}
         onChange={toggleColorMode}
       />
-      <Text fontSize={'2md'} fontWeight={'bold'}>
+      <Text whiteSpace='nowrap' fontWeight={'bold'}>
         Theme
       </Text>
     </HStack>
