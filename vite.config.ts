@@ -8,5 +8,11 @@ export default defineConfig({
     watch: {
       usePolling: true,
     },
+    proxy: {
+      '/api': {
+        target: 'https://api.rawg.io',
+        changeOrigin: true,
+      },
+    },
   },
 });
